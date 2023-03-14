@@ -1,4 +1,3 @@
----
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -15,7 +14,7 @@ spec:
         app: nginx-demo-arm
     spec:
       containers:
-        - image: ghcr.io/theautomationrules/nginx-demo-arm
+        - image: docker.io/ximenesfel/ximenes_nginx
           name: nginx-demo-arm
           ports:
             - containerPort: 80
