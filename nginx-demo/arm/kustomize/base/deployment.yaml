@@ -14,7 +14,7 @@ spec:
         app: nginx-demo-arm
     spec:
       containers:
-        - image: docker.io/ximenesfel/ximenes_nginx
+        - image: docker.io/jjader/jamisson
           name: nginx-demo-arm
           ports:
             - containerPort: 80
