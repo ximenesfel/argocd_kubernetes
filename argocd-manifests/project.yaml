@@ -9,9 +9,8 @@ spec:
   description: Demo Project
 
   sourceRepos:
-    #- '*'
-    - https://github.com/ximenesfel/argocd_kubernetes.git
-
+    - '*'
+    
   destinations:
     - namespace: '*'
       server: https://kubernetes.default.svc

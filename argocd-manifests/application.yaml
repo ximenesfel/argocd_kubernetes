@@ -1,26 +1,23 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: argocd-demo
+  name: image-updater
   namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io
   labels:
-    name: argocd-demo
+    name: image-updater
 spec:
   project: argocd-demo
 
   source:
     repoURL: https://github.com/ximenesfel/argocd_kubernetes.git
     targetRevision: main
-    path: .
-    helm:
-      valueFiles:
-        - deployment.yaml
+    path: argocd-image-updater
 
   destination:
     server: https://kubernetes.default.svc
-    namespace: argocd-demo
+    namespace: argocd
 
   syncPolicy:
     automated:
