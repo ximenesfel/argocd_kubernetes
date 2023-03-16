@@ -121,8 +121,8 @@ config:
     #   prefix: quay.io
     #   credentials: env:REGISTRY_SECRET
     - name: ECR
-      api_url: https://127012818163.dkr.ecr.eu-west-1.amazonaws.com
-      prefix: 127012818163.dkr.ecr.eu-west-1.amazonaws.com
+      api_url: https://127012818163.dkr.ecr.us-east-1.amazonaws.com
+      prefix: 127012818163.dkr.ecr.us-east-1.amazonaws.com
       default: true
       ping: yes
       insecure: no
