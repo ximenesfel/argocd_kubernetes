@@ -14,11 +14,11 @@ spec:
         app: nginx-demo-arm
     spec:
       containers:
-        - image: public.ecr.aws/h6r8z1x6/argocd2
+        - image: 127012818163.dkr.ecr.us-east-1.amazonaws.com/argocd
           name: nginx-demo-arm
           imagePullPolicy: Always
           ports:
             - containerPort: 80
-      # imagePullSecrets:
-      #   - name: regcred
+      imagePullSecrets:
+        - name: regcred
           
