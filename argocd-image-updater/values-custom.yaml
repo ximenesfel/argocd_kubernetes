@@ -105,11 +105,11 @@ config:
     #   ping: no
     #   insecure: true
     #   credentials: secret:argocd/git-credentials#creds
-    - name: Docker Hub
-      api_url: https://registry-1.docker.io
-      ping: yes
-      credentials: secret:argocd/docker-credentials#creds
-      defaultns: library
+    # - name: Docker Hub
+    #   api_url: https://registry-1.docker.io
+    #   ping: yes
+    #   credentials: secret:argocd/docker-credentials#creds
+    #   defaultns: library
     # - name: Google Container Registry
     #   api_url: https://gcr.io
     #   prefix: gcr.io
