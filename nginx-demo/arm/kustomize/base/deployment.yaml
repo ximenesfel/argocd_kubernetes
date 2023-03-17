@@ -20,5 +20,5 @@ spec:
           ports:
             - containerPort: 80
       imagePullSecrets:
-        - name: secret:argocd/docker-registry#regcred
+        - name: regcred
           
