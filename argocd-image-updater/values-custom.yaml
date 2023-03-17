@@ -126,7 +126,8 @@ config:
       default: true
       ping: yes
       insecure: no
-      credentials: ext:/scripts/ecr-login.sh
+      # credentials: ext:/scripts/ecr-login.sh
+      credentials: secret:argocd/aws-ecr-creds#creds
       credsexpire: 10h
 
   # -- ArgoCD Image Updater ssh client parameter configuration.
