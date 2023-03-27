@@ -19,4 +19,6 @@ spec:
           imagePullPolicy: Always
           ports:
             - containerPort: 80
+      imagePullSecrets:
+        - name: pullsecret:argocd/mycontainerregistry-secret
           
