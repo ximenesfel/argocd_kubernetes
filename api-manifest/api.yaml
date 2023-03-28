@@ -11,7 +11,7 @@ spec:
     - protocol: "TCP"
       port: 5000
       targetPort: 5000
-  type: LoadBalancer
+  # type: LoadBalancer
 
 ---
 # kf-api Deployment
@@ -34,10 +34,12 @@ spec:
     spec:
       containers:
         - name: kf-api
-          image: 127012818163.dkr.ecr.us-east-1.amazonaws.com/argocd:0.0.4
+          image: 127012818163.dkr.ecr.us-east-1.amazonaws.com/argocd
           ports:
             - containerPort: 5000
           imagePullPolicy: Always
           resources:
             requests:
               cpu: "250m"
+      imagePullSecrets:
+        - name: mycontainerregistry-secret
