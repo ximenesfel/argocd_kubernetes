@@ -14,7 +14,7 @@ spec:
         app: nginx-demo-arm
     spec:
       containers:
-        - image: 127012818163.dkr.ecr.us-east-1.amazonaws.com/argocd
+        - image: public.ecr.aws/b3p1x2b5/argocd:0.0.1
           name: nginx-demo-arm
           imagePullPolicy: Always
           ports:
