@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  app:
+    build:
+      context: ./api-teste/
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    container_name: api-mercantil2
+    tty: true
