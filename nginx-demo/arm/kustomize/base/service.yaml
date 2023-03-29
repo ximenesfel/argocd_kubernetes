@@ -7,5 +7,5 @@ spec:
     - port: 5000
       targetPort: 5000
   selector:
-    app: nginx-demo-arm
+    app: api-deployment
   # type: LoadBalancer
